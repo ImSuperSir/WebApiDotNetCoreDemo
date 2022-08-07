@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "identityapp1": {
+      "ignored": "true",
+      "type": "identityapp"
+    },
+    "appInsights1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/microsoft.insights/components/ai-002-WebApiAutores",
+      "type": "appInsights.azure",
+      "connectionId": "APPLICATIONINSIGHTS_CONNECTION_STRING",
+      "dynamicId": null
+    },
+    "mssql2": {
+      "ignored": "true",
+      "type": "mssql",
+      "connectionId": "connectionStrings:securityConnection"
+    },
+    "mssql1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/002-webapiautoresdbserver/databases/002-WebApiAutores_db",
+      "type": "mssql.azure",
+      "connectionId": "defaulConnection",
+      "dynamicId": null
+    }
+  }
+}
